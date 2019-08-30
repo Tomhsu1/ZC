@@ -45,3 +45,7 @@
     display: inline-block;
     margin: auto;
 }
+#movingInformation {
+    height: 20vw;
+    width: 20vw;
+}
