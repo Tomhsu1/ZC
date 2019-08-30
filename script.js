@@ -12,6 +12,15 @@ function fImageReveal() {
     
 }
 
-function hottieReveal() {
-    document.getElementById("hottie").style.display = "block";
+//function hottieReveal() {
+//    document.getElementById("hottie").style.display = "block";
+//}
+
+function movingInformation() {
+    document.getElementById("tea").style.display = "inline-block";
+    document.getElementById("movingTea").style.display = "inline-block";
+    document.getElementById("tea").style.animationPlayState = "running";
+    document.getElementById("movingTea").style.animationPlayState = "running";
+    document.getElementById("tea").style.animationIterationCount = "1";
+    document.getElementById("movingTea").style.animationIterationCount = "1";
 }

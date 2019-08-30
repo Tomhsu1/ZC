@@ -45,7 +45,50 @@
     display: inline-block;
     margin: auto;
 }
-#movingInformation {
+#hover {
+    padding: 2vw;
+    background-color: darkorchid;
+    font-size: 3vw;
+    text-align: center;
+    width: 50vw;
+}
+div.slide-right {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+div.slide-right {
+  animation: slide-right 7s;
+  overflow: hidden;
+}
+@keyframes slide-right{
+  from {
+    margin-left: 0%;
+    width: 0%;
+  }
+  to {
+    margin-left: 80%;
+    width: 55vw;
+  }
+}
+#loves {
+    display: inline-block;
+}
+#movingTea {
     height: 20vw;
     width: 20vw;
+    display: none;
+    animation-play-state: paused;
+    animation-iteration-count: initial;
+}
+#tea {
+    position: absolute;
+    transform: rotate(-30deg);
+    display: inline-block;
+    font-size: 2vw;
+    color: coral;
+    display: none;
+    animation-play-state: paused;
+    animation-iteration-count: initial;
 }
