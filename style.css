@@ -1,11 +1,44 @@
+
+
 #bright {
     color: #e6f000;
 }
-#fImageButton {
-    width: 30vw;
+#ImageButton {
+    width: 100vw;
+    background-color: crimson;
+    font-size: 2vw;
 }
 #fImage {
     height: 60vh;
     width: 30vw;
     display: none;
+}
+#sImage {
+    height: 60vh;
+    width: 30vw;
+    display: none;
+}
+#tImage {
+    height: 60vh;
+    width: 38vw;
+    display: none;
+}
+#textSizes {
+    font-size: 5vw;
+}
+#hottieAlert {
+    font-size: 5vw;
+    font-weight: 100;
+    color: blue;
+    display: inline-block;
+    margin: auto;
+}
+#hottie {
+    height: 30vw;
+    width: 30vw;
+    display: none;
+}
+#creation {
+    display: inline-block;
+    margin: auto;
 }
