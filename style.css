@@ -33,10 +33,13 @@
     display: inline-block;
     margin: auto;
 }
-#hottie {
-    height: 30vw;
-    width: 30vw;
-    display: none;
+#hottie1, #hottie2 {
+    height: 35vw;
+    width: 32.7vw;
+}
+#hottie3 {
+    height: 35vw;
+    width: 32.7vw;
 }
 #creation {
     display: inline-block;
