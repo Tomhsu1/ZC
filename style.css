@@ -1,0 +1,11 @@
+#bright {
+    color: #e6f000;
+}
+#fImageButton {
+    width: 30vw;
+}
+#fImage {
+    height: 60vh;
+    width: 30vw;
+    display: none;
+}
