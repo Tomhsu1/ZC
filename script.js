@@ -23,4 +23,11 @@ function movingInformation() {
     document.getElementById("movingTea").style.animationPlayState = "running";
     document.getElementById("tea").style.animationIterationCount = "1";
     document.getElementById("movingTea").style.animationIterationCount = "1";
+    
+    document.getElementById("cuddle").style.display = "inline-block";
+    document.getElementById("movingCuddle").style.display = "inline-block";
+    document.getElementById("cuddle").style.animationPlayState = "running";
+    document.getElementById("movingCuddle").style.animationPlayState = "running";
+    document.getElementById("cuddle").style.animationIterationCount = "1";
+    document.getElementById("movingCuddle").style.animationIterationCount = "1";
 }
