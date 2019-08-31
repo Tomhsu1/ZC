@@ -75,14 +75,14 @@ div.slide-right {
 #loves {
     display: inline-block;
 }
-#movingTea {
+#movingTea, #movingCuddle {
     height: 20vw;
     width: 20vw;
     display: none;
     animation-play-state: paused;
     animation-iteration-count: initial;
 }
-#tea {
+#tea, #cuddle {
     position: absolute;
     transform: rotate(-30deg);
     display: inline-block;
