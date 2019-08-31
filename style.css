@@ -60,7 +60,7 @@ div#slide-right {
 }
 @keyframes slide-right{
   from {
-    margin-left: -50%;
+    margin-left: -60%;
     width: 55vw;
   }
   to {
