@@ -90,3 +90,30 @@ div.slide-right {
     animation-play-state: paused;
     animation-iteration-count: initial;
 }
+#vid-controls {
+    display: inline-block;
+}
+#vid-show {
+    display: inline-block;
+    width: 48vw;
+    height: 35vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#canvas {
+    display: inline-block;
+    width: 50vw;
+    height: 27vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding-bottom: 4vw;
+}
+#vid-take {
+    display: block;
+    width: 100vw;
+    height: 10vw;
+    font-size: 5vw;
+    background-color: coral;
+    margin-bottom: 3vw;
+    color: dodgerblue;
+}

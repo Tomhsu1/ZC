@@ -32,44 +32,31 @@ function movingInformation() {
     document.getElementById("movingCuddle").style.animationIterationCount = "1";
 }
 
-// Grab elements, create settings, etc.
-var video = document.getElementById('video');
+window.addEventListener("load", function(){
+  // [1] GET ALL THE HTML ELEMENTS
+  var video = document.getElementById("vid-show"),
+      canvas = document.getElementById("vid-canvas"),
+      take = document.getElementById("vid-take");
 
-// Get access to the camera!
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    // Not adding `{ audio: true }` since we only want video now
-    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-        //video.src = window.URL.createObjectURL(stream);
-        video.srcObject = stream;
-        video.play();
+  // [2] ASK FOR USER PERMISSION TO ACCESS CAMERA
+  // WILL FAIL IF NO CAMERA IS ATTACHED TO COMPUTER
+  navigator.mediaDevices.getUserMedia({ video : true })
+  .then(function(stream) {
+    // [3] SHOW VIDEO STREAM ON VIDEO TAG
+    video.srcObject = stream;
+    video.play();
+
+    // [4] WHEN WE CLICK ON "TAKE PHOTO" BUTTON
+    take.addEventListener("click", function(){
+      // Create snapshot from video
+      var draw = document.getElementById("canvas");
+      draw.width = video.videoWidth;
+      draw.height = video.videoHeight;
+      var context2D = draw.getContext("2d");
+      context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
     });
-}
-
-/* Legacy code below: getUserMedia 
-else if(navigator.getUserMedia) { // Standard
-    navigator.getUserMedia({ video: true }, function(stream) {
-        video.src = stream;
-        video.play();
-    }, errBack);
-} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-    navigator.webkitGetUserMedia({ video: true }, function(stream){
-        video.src = window.webkitURL.createObjectURL(stream);
-        video.play();
-    }, errBack);
-} else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
-    navigator.mozGetUserMedia({ video: true }, function(stream){
-        video.srcObject = stream;
-        video.play();
-    }, errBack);
-}
-*/
-
-// Elements for taking the snapshot
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-var video = document.getElementById('video');
-
-// Trigger photo take
-document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 640, 480);
+  })
+  .catch(function(err) {
+    document.getElementById("vid-controls").innerHTML = "Please enable access and attach a camera";
+  });
 });
