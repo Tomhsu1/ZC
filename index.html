@@ -3,6 +3,7 @@
 <html>
     <title> Zhenniboo 😘 </title>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="images/hearts.png" />
@@ -37,6 +38,15 @@
         
         
         <p> and I hope you never leave ❤️ </p>
+        
+        <!--
+        Ideally these elements aren't created until it's confirmed that the 
+        client supports video/camera, but for the sake of illustrating the 
+        elements involved, they are created with markup (not JavaScript)
+        -->
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="snap">Snap Photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
     
         <div id="creation">
         <center> <p id="hottieAlert" onclick="hottieReveal()"> Created By This Hottie: </p> </center>
@@ -45,9 +55,6 @@
         <img id="hottie3" src="images/hottie3.jpeg">
         </div>
         
-        
-    
-    
     </body>
 
 
