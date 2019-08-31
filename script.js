@@ -20,8 +20,10 @@ function nonMoving() {
 }
 
 function movingInformation() {
+    
     console.log("Activating");
     document.getElementById("slide-right").style.animationPlayState = "running";
+    
     document.getElementById("tea").style.display = "inline-block";
     document.getElementById("movingTea").style.display = "inline-block";
     document.getElementById("tea").style.animationIterationCount = "1";
@@ -31,6 +33,16 @@ function movingInformation() {
     document.getElementById("movingCuddle").style.display = "inline-block";
     document.getElementById("cuddle").style.animationIterationCount = "1";
     document.getElementById("movingCuddle").style.animationIterationCount = "1";
+    
+    document.getElementById("shop").style.display = "inline-block";
+    document.getElementById("movingShop").style.display = "inline-block";
+    document.getElementById("shop").style.animationIterationCount = "1";
+    document.getElementById("movingShop").style.animationIterationCount = "1";
+    
+    document.getElementById("food").style.display = "inline-block";
+    document.getElementById("movingFood").style.display = "inline-block";
+    document.getElementById("food").style.animationIterationCount = "1";
+    document.getElementById("movingFood").style.animationIterationCount = "1";
 }
 
 window.addEventListener("load", function(){
