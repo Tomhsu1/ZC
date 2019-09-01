@@ -90,15 +90,19 @@ div#slide-right {
     display: inline-block;
     width: 48vw;
     height: 35vw;
+/*
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+*/
 }
 #canvas {
     display: inline-block;
     width: 50vw;
     height: 27vw;
+/*
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+*/
     padding-bottom: 4vw;
 }
 #vid-take {
@@ -132,7 +136,7 @@ div#slide-right {
   -moz-animation-delay:1s;
   -ms-animation-delay:1s;
   -o-animation-delay:1s;
-  animation-dely:1s;
+  animation-delay:1s;
 }
 .heart.animated {
   -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;

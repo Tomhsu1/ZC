@@ -67,6 +67,10 @@ window.addEventListener("load", function(){
       draw.height = video.videoHeight;
       var context2D = draw.getContext("2d");
       context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+        
+    var image = draw.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+
+    window.location.href=image; // it will save locally
     });
   })
   .catch(function(err) {
