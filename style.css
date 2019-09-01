@@ -75,11 +75,14 @@ div#slide-right {
 }
 #tea, #cuddle, #shop, #food {
     position: absolute;
-    transform: rotate(-30deg);
+    transform: rotate(-5deg);
+    margin-left: 2vw;
     display: inline-block;
     font-size: 2vw;
     color: deeppink;
     display: none;
+    font-weight: bold;
+    
 }
 #vid-controls {
     display: inline-block;
