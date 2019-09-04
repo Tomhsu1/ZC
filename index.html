@@ -27,25 +27,30 @@
         <center><div id="hover" onmouseover="movingInformation()"> Hover Over Me! </div></center>
         
         <div id="slide-right">
-            <p id="tea"> LOVE Tea </p>
-            <img id="movingTea" src="images/earl_grey_tea.jpeg">
+            <p id="tea"> You LOVE Tea </p>
+            <img id="movingTea" src="images/tea.jpeg">
             <p id="cuddle"> Very Cuddly </p>
             <img id="movingCuddle" src="images/cuddle.jpeg">
-            <p id="shop"> Shopaholic </p>
+            <p id="shop"> You = Shopaholic </p>
             <img id="movingShop" src="images/shoppingcartholder.png">
-            <p id="food"> Food Obsession </p>
+            <p id="food"> Food Obsession... </p>
             <img id="movingFood" src="images/food.jpeg">
         </div>
         
+        <div>
+        <p id="came"> You came into my heart... </p>
         
-        <p> You came into my heart... </p>
+        <div id="heartMoving" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class='heart animated css' draggable="true" ondragstart="drag(event)" id="drag1"></div>
+        </div>
         
-        <div class='heart animated css'></div>
+        <img src="images/heartDrag.jpeg" id="heartDragImage">
         
-        <p> and I hope you never leave ❤️ </p>
+        <div id="heartReceiving" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         
-         
-        
+        <p id="leaving"> and I hope you never leave </p>
+        </div>
+           
         <div id="vid-controls">
             <video id="vid-show"></video>
             <canvas id="canvas"></canvas>

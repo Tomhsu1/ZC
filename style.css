@@ -73,15 +73,85 @@ div#slide-right {
     width: 24.45vw;
     display: none;
 }
-#tea, #cuddle, #shop, #food {
+#tea {
     position: absolute;
     transform: rotate(-5deg);
-    margin-left: 8vw;
+    margin-left: 6vw;
     display: inline-block;
     font-size: 2vw;
     color: deeppink;
     display: none;
     font-weight: bold;
+}
+#cuddle {
+    position: absolute;
+    transform: rotate(-5deg);
+    margin-left: 11vw;
+    margin-top: 2.5vw;
+    display: inline-block;
+    font-size: 2vw;
+    color: darkgreen;
+    display: none;
+    font-weight: bold;
+}
+#shop {
+    position: absolute;
+    transform: rotate(-5deg);
+    margin-left: 6vw;
+    display: inline-block;
+    font-size: 2vw;
+    color: deeppink;
+    display: none;
+    font-weight: bold;
+}
+#food {
+   position: absolute;
+    transform: rotate(-5deg);
+    margin-left: 5vw;
+    display: inline-block;
+    font-size: 2vw;
+    color: aqua;
+    display: none;
+    font-weight: bold;
+}
+#heartMoving {
+    float: left;
+    width: 8.35vw;
+    height: 14.62vh;
+    position: absolute;
+}
+#heartReceiving {
+    width: 17vw;
+    height: 20vh;
+    position: absolute;
+    float: right;
+    margin-top: 15vw;
+    right: 7vw;
+    display: inline-block;
+}
+#drag1 {
+    width: 8.35vw;
+    height: 14.62vh;
+}
+#heartDragImage {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    float: right;
+}
+#came {
+    margin-top: 10vw;
+    font-size: 5vw;
+    position: relative;
+    display: inline-block;
+    color: crimson;
+}
+#leaving {
+    margin-top: 12vw;
+    display: inline-block;
+    position: relative;
+    font-size: 5vw;
+    color: crimson;
 }
 #vid-controls {
     display: inline-block;
@@ -90,19 +160,15 @@ div#slide-right {
     display: inline-block;
     width: 48vw;
     height: 35vw;
-/*
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-*/
 }
 #canvas {
     display: inline-block;
     width: 50vw;
     height: 27vw;
-/*
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-*/
     padding-bottom: 4vw;
 }
 #vid-take {

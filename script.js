@@ -69,7 +69,7 @@ window.addEventListener("load", function(){
       context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
         
     var image = draw.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-
+        
     window.location.href=image; // it will save locally
     });
   })
@@ -77,3 +77,17 @@ window.addEventListener("load", function(){
     document.getElementById("vid-controls").innerHTML = "Please enable access and attach a camera";
   });
 });
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
