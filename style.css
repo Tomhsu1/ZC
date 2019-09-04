@@ -217,6 +217,7 @@ div#slide-right {
   content: "";
   left: 50px;
   top: 0;
+margin-left: 0.5vw;
   width: 50px;
   height: 80px;
   background: red;
