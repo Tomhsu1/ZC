@@ -121,12 +121,12 @@ div#slide-right {
     position: absolute;
 }
 #heartReceiving {
-    width: 17vw;
-    height: 20vh;
+    width: 20vw;
+    height: 25vh;
     position: absolute;
     float: right;
-    margin-top: 15vw;
-    right: 7vw;
+    margin-top: 13vw;
+    right: 4vw;
     display: inline-block;
 }
 #drag1 {
@@ -152,6 +152,15 @@ div#slide-right {
     position: relative;
     font-size: 5vw;
     color: crimson;
+}
+#pre-question {
+    margin-top: 10vw;
+    display: block;
+}
+#question {
+    font-size: 4vw;
+    margin-top: 10vw;
+    display: block;
 }
 #vid-controls {
     display: inline-block;
