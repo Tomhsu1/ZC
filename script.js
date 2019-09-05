@@ -62,15 +62,20 @@ window.addEventListener("load", function(){
     // [4] WHEN WE CLICK ON "TAKE PHOTO" BUTTON
     take.addEventListener("click", function(){
       // Create snapshot from video
+    var download = document.getElementById("download");
       var draw = document.getElementById("canvas");
+      var context2D = draw.getContext("2d");
+
       draw.width = video.videoWidth;
       draw.height = video.videoHeight;
-      var context2D = draw.getContext("2d");
       context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
         
-    var image = draw.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+    var image = draw.toDataURL("image/png").replace("image/png", "image/octet-stream");
         
-    window.location.href=image; // it will save locally
+    download.setAttribute("href", image);
+        
+//    window.location.href=image; // it will save locally
+
     });
   })
   .catch(function(err) {

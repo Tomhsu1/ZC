@@ -162,9 +162,6 @@ div#slide-right {
     margin-top: 10vw;
     display: block;
 }
-#vid-controls {
-    display: inline-block;
-}
 #vid-show {
     display: inline-block;
     width: 48vw;
@@ -173,11 +170,11 @@ div#slide-right {
     transform: scaleX(-1);
 }
 #canvas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
     display: inline-block;
     width: 50vw;
     height: 27vw;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
     padding-bottom: 4vw;
 }
 #vid-take {

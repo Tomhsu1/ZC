@@ -6,8 +6,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="images/hearts.png"/>
-        <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/hearts.png"/>=
     </head>
     <body onload="nonMoving()">
     
@@ -48,19 +47,19 @@
         
         <div id="heartReceiving" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         
-        <p id="leaving"> and I hope you never leave </p>
+        <p id="leaving"> and I hope you never leave <br>
+        (Drag the heart to my heart) </p>
         </div>
         
         <center> <p id="pre-question"> I just have one question.... </p> </center>
         
         <center> <p id="question"> Will you be my girlfriend? </p> </center>
-           
-        <div id="vid-controls">
-            <video id="vid-show"></video>
-            <canvas id="canvas"></canvas>
-        </div>
+
+        <video id="vid-show"></video>
+        <canvas id="canvas"></canvas>
         
-        <button id="vid-take" type="button"> Take Photo! </button>
+        <a id="download" download="cutie(s).png">
+        <button id="vid-take" type="button"> Take Photo! </button> 
     
         <div id="creation">
         <center> <p id="hottieAlert" onclick="hottieReveal()"> Created By This Hottie: </p> </center>
