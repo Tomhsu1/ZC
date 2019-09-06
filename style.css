@@ -122,10 +122,10 @@ div#slide-right {
 }
 #heartReceiving {
     width: 20vw;
-    height: 25vh;
+    height: 40vh;
     position: absolute;
+    margin-top: -6vw;
     float: right;
-    margin-top: 13vw;
     right: 4vw;
     display: inline-block;
 }

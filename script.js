@@ -62,19 +62,21 @@ window.addEventListener("load", function(){
     // [4] WHEN WE CLICK ON "TAKE PHOTO" BUTTON
     take.addEventListener("click", function(){
       // Create snapshot from video
-    var download = document.getElementById("download");
-      var draw = document.getElementById("canvas");
-      var context2D = draw.getContext("2d");
+        
+        var download = document.getElementById("download");
+        var draw = document.getElementById("canvas");
 
-      draw.width = video.videoWidth;
-      draw.height = video.videoHeight;
-      context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+        draw.width = video.videoWidth;
+        draw.height = video.videoHeight;
         
-    var image = draw.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        var context2D = draw.getContext("2d");
+        context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
         
-    download.setAttribute("href", image);
-        
-//    window.location.href=image; // it will save locally
+        var image = draw.toDataURL("image/png").replace("image/png","image/octet-stream");
+        console.log(image);
+        download.setAttribute("href", image);
+//      window.location.href = image;
+        console.log("wtf");
 
     });
   })
