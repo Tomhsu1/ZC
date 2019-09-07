@@ -97,7 +97,8 @@ div#slide-right {
 #shop {
     position: absolute;
     transform: rotate(-5deg);
-    margin-left: 6vw;
+    margin-left: 8vw;
+    margin-top: 18vw;
     display: inline-block;
     font-size: 2vw;
     color: deeppink;
