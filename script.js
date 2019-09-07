@@ -98,3 +98,31 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+var clicked = 0;
+
+function buttonClick(decision) {
+    var likeYou = new Audio("audio/I really like you- Carly Rae Jepsen (LYRICS).mp3");
+    var sadness = new Audio("audio/Simon & Garfunkel - The Sounds of Silence (Audio).mp3");
+    if (decision == "yes" && clicked < 1) {
+        document.getElementById("yes").style.borderColor = "orange";
+        document.getElementById("yes").style.borderWidth = "5vw";
+        document.getElementById("no").style.borderColor = "";
+        document.getElementById("no").style.borderWidth = "";
+        likeYou.addEventListener('canplaythrough', function() {
+            if(this.currentTime < 38){this.currentTime = 38;}
+            likeYou.play();
+        });
+        clicked++;
+    } else if (decision == "no" && clicked < 1) {
+        document.getElementById("no").style.borderColor = "orange";
+        document.getElementById("no").style.borderWidth = "5vw";
+        document.getElementById("yes").style.borderColor = "";
+        document.getElementById("yes").style.borderWidth = "";
+        sadness.addEventListener('canplaythrough', function() {
+            if(this.currentTime < 3){this.currentTime = 3;}
+            sadness.play();
+        });
+        clicked++;
+    }  
+}

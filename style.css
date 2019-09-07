@@ -76,7 +76,7 @@ div#slide-right {
 #tea {
     position: absolute;
     transform: rotate(-5deg);
-    margin-left: 6vw;
+    margin-left: 14vw;
     display: inline-block;
     font-size: 2vw;
     color: deeppink;
@@ -97,18 +97,18 @@ div#slide-right {
 #shop {
     position: absolute;
     transform: rotate(-5deg);
-    margin-left: 8vw;
+    margin-left: 10vw;
     margin-top: 18vw;
     display: inline-block;
     font-size: 2vw;
-    color: deeppink;
+    color: red;
     display: none;
     font-weight: bold;
 }
 #food {
    position: absolute;
     transform: rotate(-5deg);
-    margin-left: 5vw;
+    margin-left: 6vw;
     display: inline-block;
     font-size: 2vw;
     color: aqua;
@@ -163,6 +163,42 @@ div#slide-right {
     margin-top: 10vw;
     display: block;
 }
+#yes {
+    background-color: blue;
+    width: 49vw;
+    height: 30vw;
+    font-size: 20vw;
+    text-align: center;
+}
+/*
+#yes:focus {
+    border-color: orange;
+    border-width: 3vw;
+}
+*/
+/*
+#yes:visited {
+    border-color: orange;
+    border-width: 3vw;
+}
+*/
+#no {
+    background-color: red;
+    width: 49vw;
+    height: 30vw;
+    font-size: 20vw;
+    text-align: center;
+}
+/*
+#no:focus {
+    border-color: orange;
+    border-width: 3vw;
+}
+#no:visited {
+    border-color: orange;
+    border-width: 3vw;
+}
+*/
 #vid-show {
     display: inline-block;
     width: 48vw;
